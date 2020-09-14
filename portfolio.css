@@ -1,0 +1,104 @@
+
+
+/* centers photo */
+.center
+{ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* spreads out navigation links and centers */
+nav
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly ;
+  list-style-type: none;
+}
+
+img
+{
+
+  width: 300px;
+  height: 300px;
+}
+
+h1, h2, h3 
+{
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+}
+
+h1
+{
+font-size: 40px;
+}
+
+h2
+{
+font-size: 30px;
+}
+a:link    { color: blue;  }
+a:visited { color: red;   }
+a:hover   { color: green; }
+a:active  { color: yellow;  }
+
+body, footer
+{
+background-color: lightgrey;
+}
+
+/* line breaks between sections */
+hr
+{
+  margin: 5px;
+  padding: 5px;
+}
+
+
+/* container settings */
+.parent 
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.item 
+{
+  flex: 1;
+  margin: 10px;
+  
+}
+
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+}
+
+/* ---  Contact Form Design --- */
+
+form {
+  padding-right: 6px;
+  /* Fixed small sizing issue on the right */
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+
