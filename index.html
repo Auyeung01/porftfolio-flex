@@ -8,16 +8,16 @@
   </head>
   
   
-    <header> 
+  <header> 
     <!--
     navigate to other secions*/
   -->>
-      <nav>
-        <li><a href="#about">About</a></p></li>
-        <li><a href="#contact">Contact</a></p></li>
-        <li><a href="#projects">Projects</a></p></li>
-      </nav>
-    </header>
+    <nav>
+      <li><a href="#about">About</a></p></li>
+      <li><a href="#contact">Contact</a></p></li>
+      <li><a href="#projects">Projects</a></p></li>
+    </nav>
+  </header>
 
      
   <body>
@@ -37,8 +37,6 @@
 <hr>
 
 <!-- Introduction Section
-
-
 2) Where I am
 3) What I do and what makes me special
 -->
@@ -49,31 +47,33 @@
 3) Personality outside of coding
 4) List of what I can do
 
-
 -->
+
+<!-- Item 1 -->
   <section id="about">
     <h2>About Me</h2>
-        <div class="parent">
-          <p>I'm learning how to be a full stack developer in Chicago, Illinois. <br>
-          Jumping into the world of computer programming,  
-          hoping <br>to learn from other programmers to develop my current skills of:</p>
-            <div class="item">
-              <ul>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>Javascript</li>
-              </ul>
-            </div>
-        </div>
+        <div class="container">
+          <article>
+            <p>I'm learning how to be a full stack developer in Chicago, Illinois. <br>
+            Jumping into the world of computer programming,  
+            hoping to learn from other <br> programmers to develop my current skills of:</p>
+              <div>
+                <ul>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                  <li>Javascript</li>
+                </ul>
+              </div>
+          </article>
 
-        <div class="parent">
-          <p>Outside of programming, I'm interested in doing puzzles that requires thinking:</p>
-            <div class="item">
-              <ul>
-                <li>Logically</li>
-                <li>Analytically</li>
-              </ul>
-            <div>
+        <div class="container">
+          <article>
+              <p>Outside of programming, I'm interested in doing puzzles that <br> requires thinking:</p>
+                <ul>
+                  <li>Logically</li>
+                  <li>Analytically</li>
+                </ul>
+          </article>
         </div>
   </section>
     
@@ -84,48 +84,49 @@
 4) Functional contact form
 -->
 
+<!-- Item 2 -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+      <!-- Links to external profiles -->
+      <!-- container one-->
+        <div class="container big">
+          <article>
+            <ol>
+              <li>
+                <a href="https://www.linkedin.com/in/samuel-auyeung-839a00a">LinkedIn</a>
+              </li>
 
-<section id="contact">
-  <h2>Contact Me</h2>
-<!-- Links to external profiles -->
-  <div class="parent"
-    <div>
-      <ol>
-        <li>
-          <a href="https://www.linkedin.com/in/samuel-auyeung-839a00a">LinkedIn</a>
-        </li>
-
-        <li>
-          <a href="https://github.com/Auyeung01">GitHub</a>
-        </li>
-      
-        <li>
-          <a href="mailto:samuel_auyeung@hotmail.com">Email Me</a>
-        </li>
-      </ol>
-    </div>
+              <li>
+                <a href="https://github.com/Auyeung01">GitHub</a>
+              </li>
+            
+              <li>
+                <a href="mailto:samuel_auyeung@hotmail.com">Email Me</a>
+              </li>
+            </ol>
+          </article>
     <!--
-      Contact Form
-      Email requires this code:
+      Contact Form Email requires this code:
       <form action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
         (add the input elements here)
       </form>
     -->
-    <div>
-      <form action="https://formspree.io/samuel_auyeung@hotmail.com" method="post">
-        <label for="user-name">Name:</label>
-        <input id="user-name" type="text" name="name">
+    <!-- container 2-->
+        <article>
+          <form action="https://formspree.io/samuel_auyeung@hotmail.com" method="post">
+            <label for="user-name">Name:</label>
+            <input id="user-name" type="text" name="name">
 
-        <label for="user-email">Email:</label>
-        <input id="user-email" type="text" name="email">
+            <label for="user-email">Email:</label>
+            <input id="user-email" type="text" name="email">
 
-        <label for="user-message">Message:</label>
-        <textarea id="user-message" name="message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </div>
-</section>
+            <label for="user-message">Message:</label>
+            <textarea id="user-message" name="message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </article>
+      </div>
+    </section>
 
     
 <!-- Project Section
@@ -135,18 +136,24 @@
 
 -->
     
-    
+<!-- Item 3 -->
   <section id="projects">
     <h2>Project Section</h2>
   
-      <div class="parent"></div>
+      <article class="column">
         <h3>Project Title</h3>
         <p>
           This space is to describe the future project that will be created.
         </p>
-      <div>
+        <a href="https://auyeung01.github.io/placeholder/">Link to project</a>
+      <article>
+
+      <article>
+        <img src="images/placeholder.png" alt="placeholder">
+      </article>
 
   </section>
+
 
 </main>
 

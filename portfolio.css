@@ -19,7 +19,6 @@ nav
 
 img
 {
-
   width: 300px;
   height: 300px;
 }
@@ -30,6 +29,8 @@ text-align: center;
 font-family: 'Times New Roman', Times, serif;
 }
 
+/* Font sizes */
+
 h1
 {
 font-size: 40px;
@@ -39,6 +40,38 @@ h2
 {
 font-size: 30px;
 }
+
+/* container settings */
+.container 
+{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+
+.column
+{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+article
+{
+  margin: 5%;
+}
+
+
+ol
+{
+  font-size: 25px;
+}
+
+
 a:link    { color: blue;  }
 a:visited { color: red;   }
 a:hover   { color: green; }
@@ -57,22 +90,8 @@ hr
 }
 
 
-/* container settings */
-.parent 
-{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
 
 
-.item 
-{
-  flex: 1;
-  margin: 10px;
-  
-}
 
 
 /* ---  (Desktop) Groups & Items --- */
@@ -86,9 +105,10 @@ hr
 
 /* ---  Contact Form Design --- */
 
-form {
-  padding-right: 6px;
-  /* Fixed small sizing issue on the right */
+form 
+{
+/* keeps from from stretching to end */
+width: 400px;
 }
 
 form input, 
