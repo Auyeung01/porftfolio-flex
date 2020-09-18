@@ -8,6 +8,8 @@
   margin-right: auto;
 }
 
+
+
 /* spreads out navigation links and centers */
 nav ul
 {
@@ -15,6 +17,8 @@ nav ul
   flex-direction: row;
   justify-content: space-evenly ;
   list-style-type: none;
+  font-size: larger;
+  
 }
 
 img
@@ -59,11 +63,6 @@ font-size: 30px;
 
 }
 
-
-article
-{
-  margin: 5%;
-}
 
 
 ol
