@@ -49,20 +49,37 @@ font-size: 30px;
 .container 
 {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: row;
-  align-items: center;
+ }
+
+.item 
+{
+  flex: 1;
 }
+
+.item-double 
+{
+  flex: 2;
+}
+
+
+
+/* used to visually see containers when testing */
+.solid
+{
+border-style: solid;
+}
+
+
+
 
 .column
 {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
 
 }
-
 
 
 ol
@@ -95,10 +112,8 @@ hr
 
 /* ---  (Desktop) Groups & Items --- */
 
-@media all and (min-width: 800px) {
-  section {
-    padding: 0 10%;
-  }
+@media all and (min-width: 800px) 
+{
 
 }
 
