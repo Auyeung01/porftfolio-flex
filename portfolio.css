@@ -1,18 +1,19 @@
+/* used to visually see containers when testing  
 
+.solid {
+  border-style: solid;
+  }
+*/ 
 
 /* centers photo */
-.center
-{ 
+.center { 
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-
-
 /* spreads out navigation links and centers */
-nav ul
-{
+nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly ;
@@ -21,69 +22,63 @@ nav ul
   
 }
 
-img
-{
+img {
   width: 300px;
   height: 300px;
 }
 
-h1, h2, h3 
-{
+h1, h2, h3 {
 text-align: center;
 font-family: 'Times New Roman', Times, serif;
 }
 
 /* Font sizes */
 
-h1
-{
+h1 {
 font-size: 40px;
 }
 
-h2
-{
+h2 {
 font-size: 30px;
 }
 
+p {
+  /* centers paragraphs inside containers */
+  text-align: center;
+}
+
+
+
+ul, ol {
+  /* centers line items for lists */
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 /* container settings */
-.container 
-{
+.container {
   display: flex;
   flex-direction: row;
- }
+  flex-wrap: wrap;
+}
 
-.item 
-{
+.item {
   flex: 1;
+  margin: 10px;
+  /* creates fixed sized for sections, need to be larger for flexbox to work */
+  flex-basis: 300px;
 }
 
-.item-double 
-{
-  flex: 2;
-}
-
-
-
-/* used to visually see containers when testing */
-.solid
-{
-border-style: solid;
-}
-
-
-
-
-.column
-{
+.column {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-
 }
 
 
-ol
-{
+ol {
   font-size: 25px;
 }
 
@@ -93,22 +88,15 @@ a:visited { color: red;   }
 a:hover   { color: green; }
 a:active  { color: yellow;  }
 
-body, footer
-{
+body, footer {
 background-color: lightgrey;
 }
 
 /* line breaks between sections */
-hr
-{
+hr {
   margin: 5px;
   padding: 5px;
 }
-
-
-
-
-
 
 /* ---  (Desktop) Groups & Items --- */
 
@@ -119,20 +107,18 @@ hr
 
 /* ---  Contact Form Design --- */
 
-form 
-{
+form {
 /* keeps form from stretching to end */
 max-width: 400px;
 }
 
-form input, 
-form textarea {
+form input, form textarea {
   width: 100%;
   margin-bottom: 20px;
 }
 
 form textarea {
-  height: 160px;
+  height: 120px;
 }
 
 

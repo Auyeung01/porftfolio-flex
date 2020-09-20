@@ -13,16 +13,14 @@
   <body>
 
     <header> 
-      <!--
-      navigate to other secions*/
-    -->>
+      <!-- navigate to other secions -->>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#projects">Projects</a></li>
         </ul>
-        </nav>
+      </nav>
     </header>
 
      
@@ -56,8 +54,10 @@
 <!-- Item 1 -->
   <section id="about">
     <h2>About Me</h2>
+
+    <!-- Flexbox here -->
         <div class="container">
-          <div class="solid item-double">
+          <div class="solid item">
             <p>I'm learning how to be a full stack developer in Chicago, Illinois. 
             Jumping into the world of computer programming,  
             hoping to learn from other programmers to develop my current skills of:</p>
@@ -80,6 +80,7 @@
                 </ul>
           </div>
         </div>
+    <!-- End of flexbox -->
   </section>
     
 <!-- Contact Section
@@ -94,8 +95,12 @@
     <h2>Contact Me</h2>
       <!-- Links to external profiles -->
       <!-- container one-->
-        <div class="column big solid">
-          <div class="solid">
+        <div class="container solid">
+          <!-- Flexbox here -->
+          <div class="solid item">
+            <p>While I may not be able to list what skills I can offer, I am a
+                clean slate that can be molded to align with your company's best
+                practices for doing things.</p>
             <ol>
               <li>
                 <!-- target="_blank" causes link to open in new window -->        
@@ -119,7 +124,7 @@
       </form>
     -->
     <!-- container 2-->
-        <div class="solid">
+        <div class="solid item">
           <form action="https://formspree.io/samuel_auyeung@hotmail.com" method="post">
             <label for="user-name">Name:</label>
             <input id="user-name" type="text" name="name">
@@ -133,6 +138,7 @@
           </form>
         </div>
       </div>
+    <!-- End of flexbox -->
     </section>
 
     
@@ -147,17 +153,24 @@
   <section id="projects">
     <h2>Project Section</h2>
   
-      <article class="column solid">
+      <div class="column solid">
         <h3>Project Title</h3>
         <p>
-          This space is to describe the future project that will be created.
+          This space is to describe the future project that will be created. It will be created
+          with HTML, CSS, and Javascript.
         </p>
         <a href="https://auyeung01.github.io/placeholder/">Link to project</a>
-      </article>
+      
+        <p>
+          This is the link to the code for viewing.
+        </p>
+        <a href="https://github.com/Auyeung01/placeholder">Link to project code</a>
+      
+      </div>
 
-      <article>
-        <img src="images/placeholder.png" alt="placeholder">
-      </article>
+      <div>
+        <img src="images/placeholder.png" alt="placeholder" class="center">
+      </div>
 
   </section>
 
